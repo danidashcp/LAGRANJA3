@@ -7,6 +7,8 @@ public class MovimientojJugador : MonoBehaviour
     public Rigidbody2D rg;
     public Vector2 entrada;
     Animator animator;
+    public GameObject prefabTrigo;
+    public GameObject prefabTomate;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -51,12 +53,30 @@ public class MovimientojJugador : MonoBehaviour
 
 }
 
-  private void OnTriggerEnter2D(Collider2D colision){
-          if(colision.CompareTag("nido")){
-                  Destroy(colision.gameObject);
-                  GameManager.instancia.SumarHuevo();
-          }
+public void sembrarT(InputAction.CallbackContext contexto)
+  {
+    if (contexto.started)
+    {
+        Instantiate(prefabTrigo, transform.position, Quaternion.identity);
+    }
   }
+
+  public void sembrarJ(InputAction.CallbackContext contexto)
+  {
+    if (contexto.started)
+    {
+        Instantiate(prefabTomate, transform.position, Quaternion.identity);
+    }
+  }
+
+
+       private void OnTriggerEnter2D(Collider2D colision){
+               if(colision.CompareTag("nido")){
+                        Destroy(colision.gameObject);
+                        GameManager.instancia.SumarHuevo();
+
+               }
+       }
 
 
 

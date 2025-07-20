@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "sembrartrigo",
+                    "name": "Sembrartrigo",
                     "type": "Button",
                     "id": "7d79c4c8-5bad-40e6-b352-e0cae293ce95",
                     "expectedControlType": "",
@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "siembrajitomate",
+                    "name": "tomate",
                     "type": "Button",
                     "id": "0f359d3d-57e4-4192-8f6d-ed6335e0d607",
                     "expectedControlType": "",
@@ -173,7 +173,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "sembrartrigo",
+                    "action": "Sembrartrigo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -184,7 +184,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "siembrajitomate",
+                    "action": "tomate",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
