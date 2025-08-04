@@ -1,0 +1,11 @@
+VisualElement {}
+
+
+
+#LabelHuevo {
+    font-size: 24px;
+    color: white;
+    -unity-font-style: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}

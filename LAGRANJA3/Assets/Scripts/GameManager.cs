@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instancia;
-    public int huevo = 0;
+    public int huevos = 0;
 
     void Awake()
     {
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
 
     public void SumarHuevo()
     {
-        huevo++;
+        huevos++;
         Debug.Log("Gato");
     }
     
